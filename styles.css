@@ -5,20 +5,46 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px;
-}
-
-.modern-menu {
+  background-color: #333; /* header background color*/
+  padding: 10px; /* header size */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
+header img {
+  max-width: 80px; /* logo size*/
+  height: auto;
+  margin-right: 10px; /* space between logo and text */
+  margin-left: 40px;
+}
+
+.modern-menu {
+  background-color: #333; /* background*/
+  text-align: center;
+  padding: 10px 0; /* space between top and bottom */
+}
+
+.modern-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* everything in the center */
+}
+
+.modern-menu li {
+  margin: 0 15px;
+}
+
 .modern-menu a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modern-menu a:hover {
+  background-color: #555;
 }
 
 .carrousel {
@@ -64,6 +90,30 @@ footer {
 
 .footer-content {
   /* styles for the footer */
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* Esto es para agregar un estilo de botón a los enlaces de redes sociales segun mi gusto preferido */
+.redes-sociales a {
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Esto es para cambiar el color al pasar el cursor sobre los botones de redes sociales */
+.redes-sociales a:hover {
+  background-color: #fff;
+  color: #ce64b0;
 }
 
 /* Media Query para dispositivos móviles */
