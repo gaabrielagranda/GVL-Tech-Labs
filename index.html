@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GVL Tech Labs</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Script to upload the jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Script to upload the Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Script to start the Slick Carousel -->
+  <script>
+    $(document).ready(function() {
+      $('.slick-carousel').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      // 
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Here we will implement the header -->
+  <header>
+    <div class="modern-menu">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Productos</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Section for the Carrousel -->
+  <section class="carrousel">
+    <div class="slick-carousel">
+      <div><img src="imagen1.jpg" alt="Imagen 1"></div>
+      <div><img src="imagen2.jpg" alt="Imagen 2"></div>
+      <div><img src="imagen3.jpg" alt="Imagen 3"></div>
+    </div>
+  </section>
+
+  <!-- Other sections -->
+  <section class="section-a">
+    <h2>Section A</h2>
+    <!-- content goes here -->
+  </section>
+
+  <section class="section-b">
+    <h2>Section B</h2>
+    <!-- content goes here -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script to start the Slick Carousel with Js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var slickCarousel = new Slick('.slick-carousel', {
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        // 
+      });
+    });
+  </script>
+
+</body>
+</html>
