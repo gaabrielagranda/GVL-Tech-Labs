@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GVL Tech Labs</title>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/x-icon"> 
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>GVL TECH LABS</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Links CSS file -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="icon" href="imagenes/LogoGVL (1).png" type="image/x-icon">
+      <!-- Add this line for the favicon -->
+      <script>
+         function scrolltoSection(sectionId) {
+             var section = document.getElementById(sectionId);
+             window.scrollTo({
+                 top: section.offsetTop,
+                 behavior: 'smooth'
+             })
+         }
+      </script>
+   </head>
+   <body>
+      <header> 
+         <div class="logo">
+            <img src="imagenes/LogoGVL (1).png" alt="1017 MediaRoom">
+         </div>
+         <nav>
+            <ul>
+               <li><a href="#inicio">Home</a></li>
+               <li><a href="#acerca">Acerca de Nosotros</a></li>
+               <li><a href="#servicios">Servicios</a></li>
+               <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="carrousel">
+            <img src="imagenes/1.jpg" alt="">
+            <img src="imagenes/3.jpg" alt="">
+            <img src="imagenes/Imagen1.jpg" alt="">
+            <img src="imagenes/Imagen2.jpg" alt="">
+            <img src="imagenes/Imagen3.jpg" alt="">
+         </section>
+         <section class="quienessomos">
+            <div class="section-b">
+              <div class="text-container">
+               <h2>¡Bienvenido al Portal del Empleado de GVL Tech Labs!</h2><br>
+               <p>Hace una década, un grupo de apasionados en tecnología se unió para crear GVL Tech Labs, con el objetivo de transformar la forma en que las empresas abordan los desafíos digitales. Nos convertimos en arquitectos de la transformación digital, ofreciendo soluciones innovadoras que impulsan el éxito empresarial.</p><br>
+               <p>En GVL Tech Labs, fusionamos creatividad y tecnología para anticiparnos a las tendencias y liderar el cambio. Somos una familia diversa unida por la pasión de desafiar límites y superar expectativas. Valoramos la transparencia, la integridad y construimos relaciones duraderas.</p><br>
+               <p>Cada proyecto es una oportunidad para demostrar nuestra dedicación a la excelencia. En GVL Tech Labs, no solo construimos software; construimos el futuro tecnológico. Bienvenido a nuestra historia, donde la innovación se encuentra en cada línea de código.</p>
+              </div>
+              <div class="image-container">
+                <img src="imagenes/5.png" alt="">
+              </div>
+            </div>
+          </section>
 
-<!-- Script to upload the jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+          <section class="gallery">
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+            <!-- Segunda fila -->
+            <img class="gallery-item" src="imagenes/1.jpg" alt="">
+        </section>
+        
+        
+         <section id="section-a">
+            <div class="section-a">
+               <p>En GVL Tech Labs, creemos en la importancia de brindar a nuestros empleados las herramientas necesarias para gestionar su información de manera eficiente. Este portal está diseñado para ofrecerte acceso fácil y rápido a todos los aspectos relacionados con tu vida laboral.</p>
+                <h3>Mis Datos Personales:</h3>
+                <p>Accede a tu Ficha Personal y realiza trámites administrativos de manera rápida y sencilla. Estamos comprometidos a hacer que tu experiencia sea lo más cómoda posible.</p>
+                <h3>Compañía:</h3>
+                <p>Obtén acceso a todos los documentos relacionados con la compañía y tu puesto laboral. Además, encontrarás información detallada sobre la prevención de riesgos laborales específicos de tu sector.</p>
+                <h3>Riesgos:</h3>
+                <p>Consulta la guía del empleado sobre la prevención de riesgos laborales en tu área. En GVL Tech Labs, tu seguridad y bienestar son nuestra prioridad. Familiarízate con las prácticas seguras y mantente informado sobre cómo protegerte en el entorno laboral.</p>
+                <h3>Recursos Adicionales:</h3>
+                <p>Descubre recursos adicionales que pueden ser de utilidad para tu desarrollo profesional y personal. Estamos comprometidos a proporcionarte todo lo que necesitas para prosperar en tu carrera.</p><br>
+                <p>No olvides llenar tu planilla para reconocimiento médico. Tu salud es fundamental, y queremos asegurarnos de que estés en las mejores condiciones para alcanzar tus metas.</p>
+            </div>
+         </section>
 
-<!-- Script to upload the Slick Carousel -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!-- Script to start the Slick Carousel -->
-  <script>
-    $(document).ready(function() {
-      $('.slick-carousel').slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      // 
-      });
-    });
-  </script>
-</head>
-
-<body>
-  <!-- Here we will implement the header -->
-  <header>
-    <img src="logo.png" alt="GVL Tech Labs"> 
-    <div class="modern-menu">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
-              <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-    </ul>
-    </div>
-  </header>
-
-  <!-- Section for the Carrousel -->
-  <section class="carrousel">
-    <div class="slick-carousel">
-      <div><img src="imagen1.jpg" alt="Imagen 1"></div>
-      <div><img src="imagen2.jpg" alt="Imagen 2"></div>
-      <div><img src="imagen3.jpg" alt="Imagen 3"></div>
-    </div>
-  </section>
-
-  <!-- Other sections -->
-  <section class="section-a">
-    <h2>Section A</h2>
-    <!-- content goes here -->
-  </section>
-
-  <section class="section-b">
-    <h2>Section B</h2>
-    <!-- content goes here -->
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="redes-sociales">
-      <a href="#" target="_blank">Facebook</a>
-      <a href="Instagram" target="_blank">Instagram</a>
-      <a href="#" target="_blank">Twitter</a>
-  </div>
-    <div class="footer-content">
-      <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Script to start the Slick Carousel with Js -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var slickCarousel = new Slick('.slick-carousel', {
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        // 
-      });
-    });
-  </script>
-
-</body>
+         <section class="portal-empleado">
+            <div class="box">
+               <h2>Mis Datos Personales</h2>
+               <p>Consulta y actualiza tus datos personales, dirección y currículum.</p>
+               <li>Mis Documentos</li>
+               <li>Ficha Personal</li>
+               <li>Tramites Administrativos</li>
+            </div>
+            <div class="box">
+               <h2>Gestión del tiempo</h2>
+               <p>Consulta el calendario laboral.</p>
+               <li>Calendario Laboral</li>
+               <li>Ficha Personal</li>
+               <li>Tramites Administrativos</li>
+            </div>
+            <div class="box">
+               <h2>Compañia</h2>
+               <p> Consulta todos los documentos relacionados con la compañia y tu puesto laboral.</p>
+               <li>Riesgos</li>
+               <li>Guía del empleado</li>
+               <li>Recursos adicionales</li>
+            </div>
+         </section>
+         <section class="contenedor-contacto" id="contacto">
+            <h2>CONTACTANOS</h2>
+            <div class="datos">
+               <div class="datos_1">
+                <span><i class="fa fa-map-marker"></i> PL Pablo Ruiz Picasso, 1 28020, MADRID</span><br>
+                  <i class="fa fa-phone" ></i> Telefono: +34 915145000<br>
+                  <i class="fa fa-envelope" > </i> Email: gvltechlabs@gmail.com<br>
+               </div>
+               <div class="datos_1">
+                  <form>
+                     <div class="contenedor-mensaje">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="email" name=" email" id="email" placeholder="Email">
+                        <input type="text" name="comentario" id="comentario" placeholder="Mensaje">
+                        <input type="submit" id="btn" name="submit" placeholder="Enviar">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="Social-Network">
+         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+         <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+         <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
+      </footer>
+   </body>
 </html>

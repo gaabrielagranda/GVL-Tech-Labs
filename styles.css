@@ -1,138 +1,320 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-}
-
 header {
-  background-color: #333; /* header background color*/
-  padding: 10px; /* header size */
+    background-color: #92c7cfff;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Estilos para los enlaces en el menú activos */
+nav a:hover {
+    color: #000000;
+}
+
+/* Estilos para el enlace actual en el menú */
+nav a.current {
+    font-weight: bold;
+    color: #e5e0daff;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    text-align: center; /* Centra el logotipo horizontalmente */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    max-width: 100%
+}
+
+nav {
+    text-align: center; /* Centra el menú horizontalmente */
+    margin-top: 10px; /* Añade espacio entre el logotipo y el menú */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e0daff;
+}
+
+#inicio {
+    background-image: url('cover.png');
+    height: 10vh;
+    margin-bottom: 10px; /* Agrega margen en la parte inferior para separar de la siguiente sección */
+    padding: 350px; /* Agrega espacio interno */
+    background-size: cover;
+    background-position: center;
+    max-width: 100%
+}
+
+/* Estilo para la sección  carrousel */
+.carrousel{
+    display: flex;
+    width: 100%;
+    height: 530px;
+}
+.carrousel img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.carrousel img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/* ------------ fin carrousel ---------- */
+
+/* Estilo para el artículo a la izquierda (Servicios) */
+#section-a,
+.quienessomos {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0a6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-
-header img {
-  max-width: 80px; /* logo size*/
-  height: auto;
-  margin-right: 10px; /* space between logo and text */
-  margin-left: 40px;
+#section-a .text-container,
+.quienessomos .text-container {
+  flex: 1;
+  padding: 20px;
 }
-
-.modern-menu {
-  background-color: #333; /* background*/
-  text-align: center;
-  padding: 10px 0; /* space between top and bottom */
-}
-
-.modern-menu ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center; /* everything in the center */
-}
-
-.modern-menu li {
-  margin: 0 15px;
-}
-
-.modern-menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.modern-menu a:hover {
-  background-color: #555;
-}
-
-.carrousel {
-  width: 80%;
-  margin: 5px auto;
-}
-
-.slick-carousel {
-  width: 100%;
-}
-
-.slick-prev, .slick-next {
-  font-size: 24px;
-  color: #333;
-}
-
-.slick-prev:hover, .slick-next:hover {
-  color: #fff;
-}
-
-.slick-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.section-a,
+/* ------ Section-b ------------- */
 .section-b {
-  padding: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f000;
+  border-radius: 8px;
 }
 
-.section-a h2,
-.section-b h2 {
-  color: #333;
+.section-b .text-container {
+  flex: 1;
+  padding: 20px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+.section-b .text-container h2 {
+  color: #283629;
+  font-size: 29px;
 }
 
-.footer-content {
-  /* styles for the footer */
+.section-b .text-container p {
+  color: #283629;
 }
 
-.redes-sociales {
-  margin-top: 10px;
+.section-b .image-container {
+  flex: 1;
+  overflow: hidden; /* Añadido para que la imagen no sobresalga del contenedor */
 }
 
-.redes-sociales a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
+.section-b .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Esto es para agregar un estilo de botón a los enlaces de redes sociales segun mi gusto preferido */
-.redes-sociales a {
-  padding: 5px 10px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+
+  /* ---------------- end of section b ------------ */
+  /* gallery */ 
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 3px; /* Añadida separación mínima entre las imágenes */
+    padding: 20px;
 }
 
-/* Esto es para cambiar el color al pasar el cursor sobre los botones de redes sociales */
-.redes-sociales a:hover {
-  background-color: #fff;
-  color: #ce64b0;
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    border-radius: 5px;
 }
 
-/* Media Query para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-  .modern-menu {
-    flex-direction: column;
+.gallery-item:hover {
+    cursor: crosshair;
+    transform: scale(1.1);
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+  /* Styles for portal-empleado */
+.portal-empleado {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(229, 224, 218, 0);
+    padding: 10px;
   }
-
-  .modern-menu a {
+  
+  .portal-empleado .box {
+    flex: 1;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f0f0f0a6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .portal-empleado .box h2 {
+    color: #283629;
+    font-size: 20px;
     margin-bottom: 10px;
   }
-
-  .carrousel {
-    width: 100%;
+  
+  .portal-empleado .box p {
+    color: #283629;
   }
-
-  .section-a,
-  .section-b {
-    padding: 20px;
+  
+/* Estilos para contenedor-contacto */
+.contenedor-contacto {
+    background-color: #e5e0daff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
   }
+  
+  .contenedor-contacto h2 {
+    color: #283629;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-contacto .datos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenedor-contacto .datos_1 {
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .contenedor-contacto .datos_1 i {
+    margin-right: 10px;
+    color: #283629;
+  }
+  
+  .contenedor-contacto form {
+    text-align: left;
+  }
+  
+  .contenedor-contacto .contenedor-mensaje {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenedor-contacto input[type="submit"] {
+    background-color: #92c7cfff
+    ; /* Puedes cambiar esto al color que prefieras */
+    color: #ffffff00;
+    border: none;
+    border-radius: 8px; /* Ajusta este valor para hacer el botón más o menos redondo */
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .contenedor-contacto input[type="submit"]:hover {
+    background-color: #aad7daff; /* Puedes cambiar esto al color que prefieras para el hover */
+  }
+  .contenedor-contacto input[type="text"],
+  .contenedor-contacto input[type="email"],
+  .contenedor-contacto input[type="submit"],
+  .contenedor-contacto textarea {
+    padding: 17px 25px; /* relleno del los input*/
+    border-radius: 20px; /* redondeo las esquinas exterior*/
+    margin-bottom: 20px; /* aplicamos margen a la parte inferior*/
+    margin-top: 5px; /* aplicamos margen a la parte de arriba*/
+    background-color: #fff; /* ponemos un color al relleno*/
+    border: 0.2px solid #798079; /* le aplicamos color a las lineas del border*/
+    color: #1e1f1e; /* aplicamos color a las letras dentro del input*/
+    outline: none; /* le quitamos las propiedades al contorno*/
+  }
+  
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.datos_1{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+  
+/*------------- Fin contactanos ----------- */ 
+/* -------- FOOTER ------------ */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.Social-Network{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #e5e0daff;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+.Social-Network a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #92c7cfff
+    ;
+    font-family: 'Lato', sans-serif;
+}
+
+.Social-Network a:hover {
+    color: #aad7daff; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Agregamos un espacio entre los iconos y el párrafo */
+.Social-Network p {
+    margin-top: 10px;
 }
 
