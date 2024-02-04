@@ -1,3 +1,4 @@
+
 header {
     background-color: #92c7cfff;
     color: #fff;
@@ -317,4 +318,61 @@ footer {
 .Social-Network p {
     margin-top: 10px;
 }
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
 
+  .logo img {
+      margin-right: 0;
+  }
+
+  nav {
+      margin-top: 10px;
+  }
+
+  .gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item {
+      margin: 5px;
+  }
+
+  #section-a,
+  .quienessomos,
+  .section-b,
+  .image-container img,
+  .portal-empleado .box,
+  .contenedor-contacto .datos_1 {
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .contenedor-contacto .datos_1 {
+      margin-left: 0;
+  }
+
+  .contenedor-contacto input[type="text"],
+  .contenedor-contacto input[type="email"],
+  .contenedor-contacto input[type="submit"],
+  .contenedor-contacto textarea {
+      padding: 15px;
+  }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 1025px) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
