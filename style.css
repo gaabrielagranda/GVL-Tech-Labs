@@ -376,3 +376,105 @@ footer {
       grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/*------------------ FORM 1 -------------- */ 
+.input-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0a6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.input-group {
+  flex: 1;
+  padding: 20px;
+}
+
+/*------- Form revision medica ----------- */
+form {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* =================================================================
+                      input-Group
+====================================================================*/
+.input-group{
+  display: flex; /* ponemos la caja flexible*/
+  flex-direction: column; /* ponemos en columnas todo lo que esta dentro de la caja*/
+  text-align: left; /* alineamos todo el texto dentro de la caja a la izquierda*/
+}
+
+.contenedor-mensaje{
+  width: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =================================================================
+                      h1, h2, h3,h4, h5, h6
+====================================================================*/
+h2{
+  color: #283629; /* aggregamos color a los titulos*/
+  font-size: 29px; /* le agregamos un tamoño a los titulos*/
+  margin-bottom: 10px; /* Add space below h2 titles */
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px; /* Add space below paragraphs */
+  text-align:center;
+}
+/* =================================================================
+                              Label
+====================================================================*/
+
+label{
+  color: #283629; /* aggregamos color a las letras dentro del formulario*/
+  font-size: 15px; /* ponemos el tamaño de las letras*/
+  font-weight: 600px; /*le ponemos un tamaño a las letras*/
+  margin-bottom: 15px;/* aplicamos un margen a la parte inferior de cada label*/ 
+}
+/*==================================================================
+                          input and placeholder
+====================================================================*/
+input, select{
+  padding: 17px 25px; /* relleno del los input*/
+  border-radius: 25px; /* redondeo las esquinas exterior*/
+  margin-bottom: 20px; /* aplicamos margen a la parte inferior*/
+  margin-top: 5px; /* aplicamos margen a la parte de arriba*/
+  background-color: #fff; /* ponemos un color al relleno*/
+  border: 0.2px solid #798079; /* le aplicamos color a las lineas del border*/
+  color: #1e1f1e; /* aplicamos color a las letras dentro del input*/
+  outline: none; /* le quitamos las propiedades al contorno*/
+
+}
+
+input::placeholder{
+  color: #0f0f0f; /* le aplicamos un color al texto predeterminado dentro del border*/
+}
+/*================================================================
+                          btn
+==================================================================*/
+
+.btn,#btn{
+  font-size: 16px;
+  color: black;
+  border: 0;
+  border-radius: 25px;
+  background-color: #ffff;
+  box-shadow: 0 0 20px rgba(155, 167, 154, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover, #btn:hover{
+  background-color: #92c7cfff;
+}
