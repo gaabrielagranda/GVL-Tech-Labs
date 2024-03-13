@@ -3,6 +3,6 @@
 Proyecto academico realizado por 
 
 Gabriela Granda
-Verónica Espíritu
-Vitaliy Holovchak
-Luis Figuereo
+/n Verónica Espíritu
+/n Vitaliy Holovchak
+/n Luis Figuereo
