@@ -2,7 +2,4 @@
 
 Proyecto academico realizado por 
 
-Gabriela Granda
-/n Verónica Espíritu
-/n Vitaliy Holovchak
-/n Luis Figuereo
+Gabriela Granda, Verónica Espíritu, Vitaliy Holovchak, Luis Figuereo
