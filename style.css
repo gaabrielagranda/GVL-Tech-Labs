@@ -32,6 +32,7 @@ nav a.current {
     margin-right: 20px;
     max-width: 100%
 }
+/*===============================estilos nav============================*/
 
 nav {
     text-align: center; /* Centra el menú horizontalmente */
@@ -74,6 +75,7 @@ body {
     background-position: center;
     max-width: 100%
 }
+/*========================================================fin nav======================================================*/
 
 /* Estilo para la sección  carrousel */
 .carrousel{
@@ -97,7 +99,6 @@ body {
 /* ------------ fin carrousel ---------- */
 
 /* Estilo para el artículo a la izquierda (Servicios) */
-#section-a,
 .quienessomos {
   display: flex;
   justify-content: space-around;
@@ -107,48 +108,75 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-#section-a .text-container,
+
+.text-container p, .container p{
+    text-align: left;
+}
+
+ .text-container,
 .quienessomos .text-container {
   flex: 1;
   padding: 20px;
 }
-/* ------ Section-b ------------- */
-.section-b {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f0f0f000;
-  border-radius: 8px;
-}
 
-.section-b .text-container {
+.text-container {
   flex: 1;
   padding: 20px;
 }
 
-.section-b .text-container h2 {
+.text-container h2 {
   color: #283629;
   font-size: 29px;
 }
 
-.section-b .text-container p {
+.text-container p {
   color: #283629;
 }
 
-.section-b .image-container {
+ .image-container {
   flex: 1;
   overflow: hidden; /* Añadido para que la imagen no sobresalga del contenedor */
 }
 
-.section-b .image-container img {
+ .image-container img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.section-a
+{
+  display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+.section-a2
+{
+  display: flex;
+  
+}
 
-  /* ---------------- end of section b ------------ */
+.section-a2 h3{
+  text-align: center
+}
+
+.section-a2 p 
+{
+  text-align: left;
+
+}
+
+.section-mision{
+  width: 50%;
+  margin: 5%;
+}
+
+.section-vision{
+  width: 50%;
+  margin: 5%;
+}
+  /* ---------------- end of section quienesSomos ------------ */
   /* gallery */ 
   .gallery {
     display: grid;
@@ -382,6 +410,8 @@ footer {
 .Social-Network p {
     margin-top: 10px;
 }
+
+/*======================== fin footer=========================================00*/
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
   header {
@@ -467,9 +497,6 @@ form {
   margin: 0 auto; /* Center the form horizontally */
 }
 
-/* =================================================================
-                      input-Group
-====================================================================*/
 .input-group{
   display: flex; /* ponemos la caja flexible*/
   flex-direction: column; /* ponemos en columnas todo lo que esta dentro de la caja*/
@@ -483,9 +510,6 @@ form {
   justify-content: space-between;
 }
 
-/* =================================================================
-                      h1, h2, h3,h4, h5, h6
-====================================================================*/
 h2{
   color: #283629; /* aggregamos color a los titulos*/
   font-size: 29px; /* le agregamos un tamoño a los titulos*/
@@ -497,9 +521,6 @@ p {
   margin-bottom: 20px; /* Add space below paragraphs */
   text-align:center;
 }
-/* =================================================================
-                              Label
-====================================================================*/
 
 label{
   color: #283629; /* aggregamos color a las letras dentro del formulario*/
@@ -507,9 +528,8 @@ label{
   font-weight: 600px; /*le ponemos un tamaño a las letras*/
   margin-bottom: 15px;/* aplicamos un margen a la parte inferior de cada label*/ 
 }
-/*==================================================================
-                          input and placeholder
-====================================================================*/
+
+
 input, select{
   padding: 17px 25px; /* relleno del los input*/
   border-radius: 25px; /* redondeo las esquinas exterior*/
@@ -525,9 +545,6 @@ input, select{
 input::placeholder{
   color: #0f0f0f; /* le aplicamos un color al texto predeterminado dentro del border*/
 }
-/*================================================================
-                          btn
-==================================================================*/
 
 .btn,#btn{
   font-size: 16px;
@@ -543,7 +560,43 @@ input::placeholder{
   background-color: #92c7cfff;
 }
 
-/*---------------------- seccion portal empleado --------------------------------- */
+.videos{
+  width: 100%;
+}
+button.boton {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 10px 20px; 
+  font-size: 1em; 
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+  width: 100%; 
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  button.boton {
+    font-size: 0.8em; 
+    padding: 8px 16px; 
+  }
+  .input-group{
+    width: 87%;
+    margin-left: -5px;
+    font-size: 0.8em;
+  }
+  form{
+    margin: 35px auto;
+  }
+  .acertadas{
+    font-size: 1.5em;
+  }
+}
+
+/*---------------------- seccion  empleado --------------------------------- */
 
 .container {
   max-width: 800px;
@@ -570,4 +623,275 @@ input::placeholder{
 }
 .employee-details h2 {
   margin-top: 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience h3 {
+  color: #555;
+}
+
+.experience p {
+  color: #777;
+}
+
+.experience ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience ul li {
+  margin-bottom: 10px;
+}
+/*===================Login=======================*/
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(imagenes/developer.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper
+{
+  width: 520px;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0;
+}
+.wrapper h1
+{
+  font-size: 36px;
+}
+.wrapper label{
+  color: #fff;
+}
+.wrapper .input-box
+{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input 
+{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, .2);
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder
+{
+  color: #fff;
+}
+
+.input-box i 
+{
+  position: absolute;
+  right: 15px;
+  top: 41%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input
+{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forgot a:hover
+{
+  text-decoration: underline;
+}
+.wrapper .btn 
+{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+}
+
+.btn a
+{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600; 
+}
+
+.btn a:hover
+{
+  text-decoration: overline;
+}
+
+.wrapper .registrar-link
+{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15;
+}
+
+.registrar-link p a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrar-link p a:hover
+{
+  text-decoration: underline;
+}
+
+/*===============================NORMATIVA===============================*/
+.normativa {
+  box-sizing: border-box;
+  background: #e5e0daff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-normativa {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 899px;
+  margin: 50px auto;
+  padding: 26px;
+  align-items: center;
+}
+
+.container-normativa input[type="radio"] {
+  display: none;
+}
+
+.container-normativa label {
+  padding: 25px;
+  background: #e3d3c6;
+  font-weight: bold;
+  font-size: 80%;
+  border-radius: 3px;
+}
+
+.tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+  border-radius: 10px;
+}
+
+.container-normativa .tab h2 {
+  font-size: 2em;
+}
+
+.container-normativa input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.container-normativa input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.normativa-container {
+  width: 800px;
+  padding: 20px;
+  background: #e3d3c6;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ summary{
+  background: #eee5dd;
+  color: black;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container-normativa p {
+  padding: 10px;
+  background: white;
+  color: rgb(61, 61, 61);
+  text-align: left;
+}
+
+.container-normativa h3 {
+  font-size: 25px;
+  color: #d9a77d;
+}
+
+.container-normativa a {
+  text-decoration: none;
+  color: #0979b0;
+}
+
+.container-normativa a:hover{
+  text-decoration: underline;
+  color:gray;
+}
+/*======================================================fin normativa ==============================*/
+
+
+
+/* NUEVO */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e5e0daff;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+  color: black;
+}
+
+.popup-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }

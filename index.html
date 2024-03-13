@@ -1,156 +1,39 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>GVL TECH LABS</title>
-      <link rel="stylesheet" href="style.css">
-      <!-- Links CSS file -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-      <link rel="icon" href="imagenes/LogoGVL (1).png" type="image/x-icon">
-      <!-- Add this line for the favicon -->
-      <script>
-         function scrolltoSection(sectionId) {
-             var section = document.getElementById(sectionId);
-             window.scrollTo({
-                 top: section.offsetTop,
-                 behavior: 'smooth'
-             })
-         }
-      </script>
-   </head>
-   <body>
-      <header> 
-         <div class="logo">
-            <img src="imagenes/LogoGVL (1).png" alt="GVL TECH LABS">
-         </div>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="index.html">Portal Empleado</a></li>
-               <li><a href="PRL.html">Normativa</a></li>
-               <li><a href="preguntas.html">Formación</a></li>
-               <li><a href="empleado.html">Empleado</a></li>
-            </ul>
-         </nav>
-      </header>
-      <main>
-         <section class="carrousel">
-            <img src="imagenes/1.png" alt="">
-            <img src="imagenes/2.png" alt="">
-            <img src="imagenes/3.png" alt="">
-            <img src="imagenes/4.png" alt="">
-         </section>
-         <article class="quienessomos">
-            <div class="section-b">
-              <div class="text-container">
-               <h2>¡Bienvenido al Portal del Empleado de GVL Tech Labs!</h2><br>
-               <p>Hace una década, un grupo de apasionados en tecnología se unió para crear GVL Tech Labs, con el objetivo de transformar la forma en que las empresas abordan los desafíos digitales. Nos convertimos en arquitectos de la transformación digital, ofreciendo soluciones innovadoras que impulsan el éxito empresarial.</p><br>
-               <p>En GVL Tech Labs, fusionamos creatividad y tecnología para anticiparnos a las tendencias y liderar el cambio. Somos una familia diversa unida por la pasión de desafiar límites y superar expectativas. Valoramos la transparencia, la integridad y construimos relaciones duraderas.</p><br>
-               <p>Cada proyecto es una oportunidad para demostrar nuestra dedicación a la excelencia. En GVL Tech Labs, no solo construimos software; construimos el futuro tecnológico. Bienvenido a nuestra historia, donde la innovación se encuentra en cada línea de código.</p>
-              </div>
-              <div class="image-container">
-                <img src="imagenes/6.png" alt="">
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/LogoGVL (1).png" type="image/x-icon">
+</head>
+<body class="login">
+    <div class="wrapper">
+        <form action="" class="form2">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bx-user'></i>
             </div>
-         </article>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
 
-          <section class="gallery">
-            <img class="gallery-item" src="imagenes/gallery1.png" alt="">
-            <img class="gallery-item" src="imagenes/gallery2.png" alt="">
-            <img class="gallery-item" src="imagenes/gallery3.png" alt="">
-            <img class="gallery-item" src="imagenes/gallery4.png" alt="">
-            <img class="gallery-item" src="imagenes/gallery5.png" alt="">
-            <img class="gallery-item" src="imagenes/gallery6.png" alt="">
-        </section>
-        
-        
-         <article id="section-a">
-            <div class="section-a">
-               <h2>Misión y Visión de la Empresa</h2>
-               <h2>Misión</h2>
-               <p>Nuestra misión es ser líderes en el mercado, ofreciendo productos de la más alta calidad y servicios excepcionales que superen las expectativas de nuestros clientes. Buscamos constantemente la innovación en nuestros procesos y la mejora continua en todas nuestras operaciones para asegurar la satisfacción y fidelidad de nuestros clientes. Nos comprometemos a ser una empresa social y ambientalmente responsable, contribuyendo al bienestar de nuestra comunidad y al desarrollo sostenible.</p>
-           
-               <h2>Visión</h2>
-               <p>Nuestra visión es ser reconocidos como la empresa líder en nuestro sector, tanto a nivel nacional como internacional. Nos esforzamos por ser un referente de excelencia en todo lo que hacemos, desde la calidad de nuestros productos y servicios hasta nuestra ética empresarial y responsabilidad social. Buscamos constantemente la innovación y la excelencia en todo lo que hacemos, manteniendo siempre un enfoque centrado en el cliente y en el desarrollo sostenible. Queremos ser un lugar donde las personas talentosas deseen trabajar, crecer y contribuir al éxito de la empresa, y donde nuestros clientes confíen plenamente en nosotros como su socio de confianza.</p>
-            </div>
-         </article>
+            <div class="remember-forgot">
+                <label ><input type="checkbox">Recuerdame</label>
 
-         <section class="portal-empleado">
-            <a href="empleado.html" class="box">
-                <h1>Mis Datos Personales</h1>
-            </a>
-            <a href="preguntas.html" class="box">
-                <h1>Prevención de Riesgos Laborales</h1>
-            </a>
-            <a href="form.html" class="box">
-                <h1>Reconocimiento médico</h1>
-            </a>
-        </section>
-
-         <section class="conoceEquipo">
-            <div class="text-container">
-                <h2>Conoce a tu equipo de trabajo</h2>
-                <p>Descubre a las personas increíbles que forman parte de nuestro equipo...</p>
+                <a href="#">Olvido la contraseña?</a>
             </div>
-        
-            <div class="slider">
-                <div class="miembro">
-                    <img src="miembro1.jpg" alt="Miembro 1">
-                    <h3>Verónica Espíritu</h3>
-                    <p>Técnico Microinformático</p>
-                </div>
-        
-                <div class="miembro">
-                    <img src="miembro2.jpg" alt="Miembro 2">
-                    <h3>Vitaliy Holovchak</h3>
-                    <p>Especialistas en macrodatos</p>
-                </div>
-                <div class="miembro">
-                  <img src="imagenes/gabriela.png" alt="Gabriela">
-                  <h3>Gabriela Granda</h3>
-                  <p>Técnico de Sistemas</p>
-              </div>
-              <div class="miembro">
-               <img src="miembro2.jpg" alt="Miembro 2">
-               <h3>Nombre del Miembro 2</h3>
-               <p>Programador</p>
-           </div>
-        
-                <!-- Agrega más miembros según sea necesario -->
-        
-            </div>
-        </section>
-        
-        
-         <section class="contenedor-contacto" id="contacto">
-            <h2>CONTACTANOS</h2>
-            <div class="datos">
-               <div class="datos_1">
-                <span><i class="fa fa-map-marker"></i> PL Pablo Ruiz Picasso, 1 28020, MADRID</span><br>
-                  <i class="fa fa-phone" ></i> Telefono: +34 915145000<br>
-                  <i class="fa fa-envelope" > </i> Email: gvltechlabs@gmail.com<br>
-               </div>
-               <div class="datos_1">
-                  <form>
-                     <div class="contenedor-mensaje">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                        <input type="email" name=" email" id="email" placeholder="Email">
-                        <input type="text" name="comentario" id="comentario" placeholder="Mensaje">
-                        <input type="submit" id="btn" name="submit" placeholder="Enviar">
-                     </div>
-                  </form>
-               </div>
             
+            <button type="submit" class="btn"><a href="indexPortalEmpleado.html">Entrar</a></button>
+
+            <div class="registrar-link">
+                <p>No tienes una cuenta? <a href="#">Registrar</a></p>
             </div>
-         </section>
-      </main>
-      <footer>
-         <div class="Social-Network">
-         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-         <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-         <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
-      </footer>
-   </body>
+
+        </form> 
+    </div>
+</body>
 </html>

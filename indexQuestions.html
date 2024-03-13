@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>GVL TECH LABS</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Links CSS file -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="icon" href="imagenes/LogoGVL (1).png" type="image/x-icon">
+      <!-- Add this line for the favicon -->
+      <script>
+         function scrolltoSection(sectionId) {
+             var section = document.getElementById(sectionId);
+             window.scrollTo({
+                 top: section.offsetTop,
+                 behavior: 'smooth'
+             })
+         }
+      </script>
+   </head>
+<body>
+   <header> 
+      <div class="logo">
+         <img src="imagenes/LogoGVL (1).png" alt="GVL TECH LABS">
+      </div>
+      <nav>
+         <ul>
+            <li><a href="indexPortalEmpleado.html">Home</a></li>
+            <li><a href="indexNormativa.html">Normativa</a></li>
+            <li><a href="indexQuestions.html">Formación</a></li>
+            <li><a href="indexEmpleado.html">Empleado</a></li>
+         </ul>
+      </nav>
+   </header>
+<main>  
+    <form>
+        <div class="input-group" id="p0">
+         <video class="videos" controls>
+            <source src="videos/gabriela.mp4" type="video/mp4">
+         </video><br>
+         1. ¿Cuál es la diferencia principal entre el contacto directo e indirecto con la electricidad?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg1" value="1"  onclick="respuesta(0,this)"/> Directo: tocar partes activas. Indirecto: tocar partes energizadas por fallo de aislamiento. <br>
+              <input type="radio" name="preg1" value="2" onclick="respuesta(0,this)"/> Directo: manipular interruptores eléctricos. Indirecto: mal manejo de cables de extensión.<br />
+              <input type="radio" name="preg1" value="3" onclick="respuesta(0,this)"/> Directo: usar herramientas eléctricas. Indirecto: tocar superficies cargadas estáticamente.<br />
+            </div>
+          </div>
+         
+         <div class="input-group"id="p1">
+            2. ¿Cuál de estos colores de señalización se utiliza para indicar una advertencia de precaución y atención? <br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg2" value="1" onclick="respuesta(1,this)"/> Rojo<br>
+              <input type="radio" name="preg2" value="2" onclick="respuesta(1,this)"/> Amarillo<br>
+              <input type="radio" name="preg2" value="3" onclick="respuesta(1,this)"/> Verde<br />
+            </div>
+         </div>
+
+         <div class="input-group" id="p2">
+            3. ¿Todos los lugares de trabajo deben adoptar medidas de seguridad contra incendios?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg3" value="1" onclick="respuesta(2,this)"/> No es necesario adoptar medidas de seguridad contra incendios en lugares de trabajo semicerrados o al aire libre.<br><br>
+              <input type="radio" name="preg3" value="2" onclick="respuesta(2,this)"/> Las medidas de seguridad contra incendios solo son obligatorias en lugares de trabajo cerrados.<br />
+              <input type="radio" name="preg3" value="3" onclick="respuesta(2,this)"/> Sí. Todos los lugares de trabajo, incluso aquellos en recintos semicerrados o al aire libre, deben adoptar medidas de seguridad contra incendios.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p3">
+            4. ¿Cuáles son posibles causas de emergencias que pueden proceder del entorno social en un centro de trabajo?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg4" value="1" onclick="respuesta(3,this)"/> Incendios, explosiones, fugas.<br />
+              <input type="radio" name="preg4" value="2" onclick="respuesta(3,this)"/> Huelgas, sabotajes, atracos.<br />
+              <input type="radio" name="preg4" value="3" onclick="respuesta(3,this)"/> Inundaciones, rayos, incendios forestales.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p4">
+            5. ¿Cuáles son los posibles riesgos asociados con la electricidad, según el texto?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg5" value="1" onclick="respuesta(4,this)"/> Riesgos de incendio o explosión y efectos nocivos sobre el cuerpo humano.<br />
+              <input type="radio" name="preg5" value="2" onclick="respuesta(4,this)"/> Únicamente efectos negativos sobre el cuerpo humano.<br />
+              <input type="radio" name="preg5" value="3" onclick="respuesta(4,this)"/> Solo riesgos de incendio y explosión.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p5">
+            <video class="videos" controls>
+               <source src="videos/vitaliy.mp4" type="video/mp4">
+            </video><br>
+            6. ¿Cuál es la distancia recomendada que debe haber entre tus ojos y la pantalla?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg6" value="1" onclick="respuesta(5,this)"/> 30-45 cm<br />
+              <input type="radio" name="preg6" value="2" onclick="respuesta(5,this)"/> 65-70 cm<br />
+              <input type="radio" name="preg6" value="3" onclick="respuesta(5,this)"/> 85-110 cm<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p6">
+            7. ¿Qué problema de salud relacionado con la ergonomía puede surgir por el uso prolongado de un ratón no ergonómico?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg7" value="1" onclick="respuesta(6,this)"/> Tendinitis en los dedos.<br />
+              <input type="radio" name="preg7" value="2" onclick="respuesta(6,this)"/> Mayor movilidad en las muñecas.<br />
+              <input type="radio" name="preg7" value="3" onclick="respuesta(6,this)"/> Fortalecimiento de los músculos del antebrazo.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p7">
+            8. ¿Por qué es importante realizar pausas activas durante la jornada laboral frente al ordenador para prevenir riesgos ergonómicos?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg8" value="1" onclick="respuesta(7,this)"/> Las pausas activas no tienen ningún impacto en la prevención de riesgos.<br />
+              <input type="radio" name="preg8" value="2" onclick="respuesta(7,this)"/> Para evitar la fatiga visual y el sedentarismo.<br />
+              <input type="radio" name="preg8" value="3" onclick="respuesta(7,this)"/> Porque interrumpen el flujo de trabajo sin beneficios reales.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p8">
+            9. ¿Cuál de los siguientes elementos NO contribuye a la configuración ergonómica de un espacio de trabajo con ordenador?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg9" value="1" onclick="respuesta(8,this)"/> Teclado inalámbrico para mayor movilidad.<br />
+              <input type="radio" name="preg9" value="2" onclick="respuesta(8,this)"/> Múltiples monitores para aumentar la productividad.<br />
+              <input type="radio" name="preg9" value="3" onclick="respuesta(8,this)"/> Iluminación adecuada y libre de reflejos en la pantalla.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p9">
+            10. ¿Cuál de las siguientes acciones NO es una práctica recomendada para prevenir riesgos ergonómicos al utilizar un monitor de computadora durante largos períodos?<br><br>
+            <div class="respuestas">
+              <input type="radio" name="preg10" value="1" onclick="respuesta(9,this)"/> Configurar el brillo y contraste del monitor para una visión óptima.<br />
+              <input type="radio" name="preg10" value="2" onclick="respuesta(9,this)"/> Usar un monitor de tamaño pequeño para reducir la fatiga visual.<br />
+              <input type="radio" name="preg10" value="3" onclick="respuesta(9,this)"/> Ajustar la altura del monitor a nivel de los ojos para mantener una buena postura.<br />
+            </div>
+         </div>
+
+         <div class="input-group"id="p10">
+            <video class="videos" controls>
+               <source src="videos/veronica.mp4" type="video/mp4">
+            </video><br>
+            11. ¿Cuáles son algunas de las manifestaciones cognitivas del estrés?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg11" value="1" onclick="respuesta(10,this)"/> Dificultad para concentrarse, recordar y aprender cosas nuevas.<br>
+              <input type="radio" name="preg11" value="2" onclick="respuesta(10,this)"/> Aumento de la presión arterial y problemas cardíacos.<br>
+              <input type="radio" name="preg11" value="3" onclick="respuesta(10,this)"/> Mayor propensión al abuso de drogas y alcohol.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p11">
+            12. ¿Cuál de las siguientes situaciones puede contribuir a riesgos psicosociales en el área informática?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg12" value="1" onclick="respuesta(11,this)"/> Tener un horario de trabajo fijo.<br>
+              <input type="radio" name="preg12" value="2" onclick="respuesta(11,this)"/> Carga de trabajo excesiva.<br>
+              <input type="radio" name="preg12" value="3" onclick="respuesta(11,this)"/> Acceso a un espacio de descanso.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p12">
+            13. ¿Cuál de los siguientes factores puede contribuir a la fatiga visual en el trabajo con ordenadores?
+            <div class="respuestas"><br>  
+              <input type="radio" name="preg13" value="1" onclick="respuesta(12,this)"/> Iluminación adecuada.<br>
+              <input type="radio" name="preg13" value="2" onclick="respuesta(12,this)"/> Descansos regulares.<br>
+              <input type="radio" name="preg13" value="3" onclick="respuesta(12,this)"/> Pantallas mal ajustadas.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p13">
+            14. ¿Cómo puede afectar el aislamiento social en el área informática a los riesgos psicosociales?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg14" value="1" onclick="respuesta(13,this)"/> Mejorando la comunicación en equipo.<br>
+              <input type="radio" name="preg14" value="2" onclick="respuesta(13,this)"/> Aumentando la satisfacción laboral.<br>
+              <input type="radio" name="preg14" value="3" onclick="respuesta(13,this)"/> Contribuyendo a la sensación de soledad y estrés.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p14">
+            15. ¿Qué medidas pueden ayudar a reducir los riesgos psicosociales en el área informática?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg15" value="1" onclick="respuesta(14,this)"/> Establecer jornadas laborales más largas.<br>
+              <input type="radio" name="preg15" value="2" onclick="respuesta(14,this)"/> Proporcionar formación en gestión del tiempo y manejo del estrés.<br>
+              <input type="radio" name="preg15" value="3" onclick="respuesta(14,this)"/> Ignorar las sugerencias y quejas de los empleados.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p15">
+            <video class="videos" controls>
+               <source src="/GVL Tech definitivo completo/GVL Tech/videos/luis.mp4" type="video/mp4">
+            </video><br>
+            16. ¿A través de que vía, los agentes químicos realizan la penetración en la piel?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg16" value="1" onclick="respuesta(15,this)"/> Vía inhalatoria<br>
+              <input type="radio" name="preg16" value="2" onclick="respuesta(15,this)"/> Vía dérmica<br>
+              <input type="radio" name="preg16" value="3" onclick="respuesta(15,this)"/> Vía parenteral<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p16">
+            17. ¿Cuál es un riesgo potencial relacionado con la gestión de residuos electrónicos en el área informática?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg17" value="1" onclick="respuesta(16,this)"/> Reciclar los dispositivos electrónicos de forma adecuada.<br>
+              <input type="radio" name="preg17" value="2" onclick="respuesta(16,this)"/> Arrojar dispositivos electrónicos en la basura común.<br>
+              <input type="radio" name="preg17" value="3" onclick="respuesta(16,this)"/> Donar dispositivos electrónicos a organizaciones benéficas.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p17">
+            18. ¿Por qué es importante el manejo adecuado de los productos químicos en el área informática?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg18" value="1" onclick="respuesta(17,this)"/> Para mejorar la velocidad de los ordenadores.<br>
+              <input type="radio" name="preg18" value="2" onclick="respuesta(17,this)"/> Para prevenir la contaminación del aire y agua.<br />
+              <input type="radio" name="preg18" value="3" onclick="respuesta(17,this)"/> Para aumentar la vida útil de los componentes electrónicos.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p18">
+            19. ¿Qué medida ayuda a reducir el impacto ambiental en el uso de dispositivos informáticos?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg19" value="1" onclick="respuesta(18,this)"/> Actualizar regularmente los equipos.<br>
+              <input type="radio" name="preg19" value="2" onclick="respuesta(18,this)"/> Desechar los dispositivos después de un año de uso.<br>
+              <input type="radio" name="preg19" value="3" onclick="respuesta(18,this)"/> Utilizar dispositivos electrónicos hasta que ya no funcionen.<br>
+            </div>
+         </div>
+
+         <div class="input-group"id="p19">
+            20. ¿Cómo puede contribuir el consumo energético al riesgo ambiental en el área informática?
+            <div class="respuestas"><br>
+              <input type="radio" name="preg20" value="1" onclick="respuesta(20,this)"/> Apagar los equipos cuando no se utilicen. <br>
+              <input type="radio" name="preg20" value="2" onclick="respuesta(20,this)"/> Dejar todos los equipos encendidos constantemente.<br>
+              <input type="radio" name="preg20" value="3" onclick="respuesta(20,this)"/> Optimizar la configuración de energía de los equipos para minimizar el consumo.<br>
+            </div>
+         </div>
+
+         <button class="boton" type="button" onclick="corregir()">Responder</button><br>
+         <h2 class="acertadas">Cantidad acertadas: <span id="resultado"></span></h2>
+    </form>
+
+    <div id="popup" class="popup-container">
+      <div class="popup-content">
+        <span onclick="cerrarPopup()" class="popup-cerrar">&times;</span>
+        <h2>¡Lo has conseguido!</h2>
+        <p>Felicidades, has completado el formulario con éxito.</p>
+      </div>
+    </div>
+
+   <script src="script.js"></script> 
+</main>
+    <!-- Footer -->
+    <footer>
+      <div class="Social-Network">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
+   </footer>
+</body>
+</html>

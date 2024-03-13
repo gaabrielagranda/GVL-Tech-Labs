@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>GVL TECH LABS</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Links CSS file -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="icon" href="imagenes/LogoGVL (1).png" type="image/x-icon">
+      <!-- Add this line for the favicon -->
+   </head>
+<body>
+    <header> 
+        <div class="logo">
+           <img src="imagenes/LogoGVL (1).png" alt="GVL TECH LABS">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexPortalEmpleado.html">Home</a></li>
+                <li><a href="indexNormativa.html">Normativa</a></li>
+                <li><a href="indexQuestions.html">Formación</a></li>
+                <li><a href="indexEmpleado.html">Empleado</a></li>
+             </ul>
+        </nav>
+     </header>
+
+    <main>
+        <form action="https://formsubmit.co/gvttechlabs@gmail.com" method="POST">
+            <h2>RECONOCIMIENTO MEDICO</h2>
+            <p>Conforme a la normativa de seguridad social y prevención de riesgos laborales, le solicitamos su autorización para realizar reconocimientos médicos a todos los empleados de la empresa, así como exámenes específicos requeridos por la evaluación de riesgos. Los resultados serán confidenciales, y el personal sanitario no divulgará información al empleador sin su expreso consentimiento. Solo se registrará la aptitud para el trabajo.</p>
+            <h2>INFORMACION PERSONAL</h2>
+            <div class="input-group">
+                <!-- campo nombre  -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required> 
+        
+                <!-- Campo de DNI/NIE -->
+                <label for="dni">DNI/NIE</label>
+                <input type="text" name="dni" id="dni" placeholder="DNI/NIE" required>
+
+                <!-- correo -->
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="corro" required placeholder="usuario@ejemplo.com">
+
+                <!-- Ciudad -->
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Madrid" required minlength="2" maxlength="100" size="50">
+
+                <!-- codigo_postal -->
+                <label for="codigo_postal">Codigo Postal</label>
+                <input type="text" name="codigo_postal" id="codigo_postal" placeholder="28000" required minlength="2" maxlength="5">
+
+                <!-- Provincia -->
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia" id="provincia" placeholder="Madrid" required minlength="2" maxlength="100" size="50">
+
+                <!-- numero de telefono -->
+                <label for="numero_telefono">Telefono de Contacto</label>
+                <input type="tel" id="numero_telefono" name="numero_telefono" placeholder="123456789" required>
+
+                <!-- Puesto de trabajo -->
+                <label for="puesto">Puesto de trabajo</label>
+                <input type="text" name="provincia" id="provincia" placeholder="Madrid" minlength="2" maxlength="100" size="50">
+
+                <!-- Centro de trabajo  -->
+                <label for="centroTrabajo">Centro de trabajo</label>
+                <select name="centroTrabajo" id="centroTrabajo">
+                    <option value="AlborCádiz">Albor Cádiz - C/ Ángel Mayo</option>
+                    <option value="AlborCórdoba">Albor Córdoba</option>
+                    <option value="AlborMadrid">Albor Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Croft">Albor Cádiz - C/ Ángel Mayo</option>
+                    <option value="HQLleida">HQ Lleida</option>
+                    <option value="Lleida">Lleida - C/ Palma</option>
+                    <option value="Madrid">Madrid - Julián Camarillo</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Tarragona">Tarragona</option>
+                </select>
+
+                <!-- Campo de aceptar o no revision medica -->
+                <h3>¿Quieres realizar la Revisión Médica de la empresa este 2024?</h3>
+                <div class="opciones">
+                    <label>
+                        <input type="radio" name="opcion" value="si"> Sí, acepto realizar la revisión médica este 2024. 
+                      </label>
+                      <br>
+                      <label>
+                        <input type="radio" name="opcion" value="no"> No, rechazo realizar la revisión médica este 2024.
+                    </label>
+                </div>
+
+                <!-- Campo input enviar -->
+                <input type="submit" value="enviar" class="btn">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            </div>           
+        </form>
+    </main>
+
+
+   <!-- Footer -->
+   <footer>
+    <div class="Social-Network">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
+ </footer>
+</body>
+</html>
